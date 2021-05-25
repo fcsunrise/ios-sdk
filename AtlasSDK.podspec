@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.description        = "AtlasSDK is a framework which provides Atlas payment services implementation to be used in mobile apps"
 
   spec.homepage           = "https://docs.cityhub.com.ua/introduction.html"
-  spec.license            = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license            = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Yelyzaveta" => "kartcevayelyzaveta@gmail.com" }
   spec.platform           = :ios, "13.0"
   spec.swift_version      = "5.0"
