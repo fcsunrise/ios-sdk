@@ -24,8 +24,19 @@ public protocol AtlasSDKDelegate: class {
     ///sdk did receive 3ds linl for host-2-host operation
     func atlasSDKDidReceive3DsOnHost2Host(paymentID: String, link: URL)
     
+    ///sdk did receive 3ds linl for moto operation
+    func atlasSDKDidReceive3DsOnMoto(paymentID: String, link: URL)
+    
     ///sdk did complete transaction
     func atlasSDKDidCompleteTransaction(paymentID: String, externalTransactionID: Int?, oltpID: Int?)
+    
+}
+
+extension AtlasSDKDelegate {
+    
+    func atlasSDKDidReceive3DsOnHost2Host(paymentID: String, link: URL) {}
+    
+    func atlasSDKDidReceive3DsOnMoto(paymentID: String, link: URL) {}
     
 }
 
@@ -69,7 +80,7 @@ public class AtlasSDK: NSObject, NetworkStateProtocol, TransactionUsecase {
     
     //MARK: - Shared
     
-    static var shared = AtlasSDK()
+    public static var shared = AtlasSDK()
     
     //MARK: - Properties
     
@@ -121,7 +132,7 @@ public class AtlasSDK: NSObject, NetworkStateProtocol, TransactionUsecase {
         return payNavigation
     }()
     
-    weak var delegate: AtlasSDKDelegate?
+    public weak var delegate: AtlasSDKDelegate?
     
     private var isPaymentNavigationPresented: Bool = false
     
@@ -219,7 +230,7 @@ public class AtlasSDK: NSObject, NetworkStateProtocol, TransactionUsecase {
     
     //MARK: - Host-2-Host controller
     
-    func presentPaymentController(pointID: String, pointToken: String, account: String, serviceID: Int, amount: Int, controllerTitle: String?, style: UIModalPresentationStyle, completion: @escaping() -> ()) {
+    public func presentPaymentController(pointID: String, pointToken: String, account: String, serviceID: Int, amount: Int, controllerTitle: String?, style: UIModalPresentationStyle, completion: @escaping() -> ()) {
         self.pointID = pointID
         self.pointToken = pointToken
         self.paymentControllerNavigation.modalPresentationStyle = style
@@ -273,6 +284,12 @@ public class AtlasSDK: NSObject, NetworkStateProtocol, TransactionUsecase {
         }
         service.findTransactionCallback = { [weak self] (paymentID, externalTransactionID, oltpID) in
             self?.findTransactionBy(paymentID: paymentID, externalTransactionID: externalTransactionID, oltpID: oltpID)
+        }
+        service.threeDsCallBack = { [weak self] (link, paymentID) in
+            if self?.shouldShowWebControllerOnWebAcquiringPayment == true {
+                self?.proceedRedirect(url: link, paymentID: paymentID, service: .webAcquiringPayment)
+            }
+            self?.delegate?.atlasSDKDidReceive3DsOnMoto(paymentID: paymentID, link: link)
         }
         service.createTransactionCallback = { [weak self] (response) in
             self?.delegate?.atlasSDKDidCreateTransaction(with: response)

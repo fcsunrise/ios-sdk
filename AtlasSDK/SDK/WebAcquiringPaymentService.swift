@@ -23,6 +23,8 @@ class WebAcquiringPaymentService: BaseService, TransactionUsecase {
     
     var errorCallback: ((APIError) -> Void)?
     
+    var threeDsCallBack: ((_ threeDS: URL, _ paymentID: String) ->())?
+    
     var findTransactionCallback: ((_ paymentID: String, _ externalTransactionID: Int?, _ oltpID: Int?) -> Void)?
     
     var createTransactionCallback: ((CreateTransactionResponseData) -> Void)?
@@ -115,6 +117,9 @@ class WebAcquiringPaymentService: BaseService, TransactionUsecase {
                     if let _ = json[APIParameterName.result.rawValue] as? Bool {
                         self?.findTransactionCallback?(paymentID, response.externalTransactionID, response.oltpID)
                         return
+                    }
+                    if let result = json[APIParameterName.result.rawValue] as? [String : Any], let threeDs = result[APIParameterName.threeDs.rawValue] as? String, let link = URL(string: threeDs) {
+                        self?.threeDsCallBack?(link, paymentID)
                     }
                 }).catch({ (error) in
                     if let apiError = error as? APIError {
