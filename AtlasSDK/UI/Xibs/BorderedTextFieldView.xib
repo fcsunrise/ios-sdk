@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Light.otf">
+            <string>SFProDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BorderedTextFieldView" customModule="AtlasSDK">
+            <connections>
+                <outlet property="btnAction" destination="dNy-D1-vr5" id="Q7V-kc-D6m"/>
+                <outlet property="tfContent" destination="8Yi-XR-zo4" id="yE3-8E-RD2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrP-DD-b4g" customClass="BorderedView" customModule="AtlasSDK" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="427" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDE-ky-esB">
+                            <rect key="frame" x="20" y="0.0" width="407" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Yi-XR-zo4" customClass="PaddedTextField" customModule="AtlasSDK">
+                                    <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
+                                    <color key="textColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="topPadding">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didChangeText:" destination="-1" eventType="editingChanged" id="NZq-26-TRd"/>
+                                    </connections>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMg-Yp-iav">
+                                    <rect key="frame" x="364" y="0.0" width="43" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNy-D1-vr5">
+                                            <rect key="frame" x="0.0" y="0.0" width="16" height="50"/>
+                                            <state key="normal" image="sdk_icon_info"/>
+                                            <connections>
+                                                <action selector="didTouchButton:" destination="-1" eventType="touchUpInside" id="wQy-Nf-urh"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="dNy-D1-vr5" secondAttribute="bottom" id="2sd-rn-cNf"/>
+                                        <constraint firstItem="dNy-D1-vr5" firstAttribute="top" secondItem="nMg-Yp-iav" secondAttribute="top" id="DwL-6b-MDS"/>
+                                        <constraint firstAttribute="width" constant="43" id="Lof-L9-9fz"/>
+                                        <constraint firstItem="dNy-D1-vr5" firstAttribute="leading" secondItem="nMg-Yp-iav" secondAttribute="leading" id="qN6-Oe-2cP"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TDE-ky-esB" secondAttribute="trailing" id="9qp-dA-xjq"/>
+                        <constraint firstAttribute="bottom" secondItem="TDE-ky-esB" secondAttribute="bottom" id="Ey8-Gt-L36"/>
+                        <constraint firstItem="TDE-ky-esB" firstAttribute="leading" secondItem="XrP-DD-b4g" secondAttribute="leading" constant="20" id="WmP-Vb-MsA"/>
+                        <constraint firstItem="TDE-ky-esB" firstAttribute="top" secondItem="XrP-DD-b4g" secondAttribute="top" id="wU6-Bg-DiK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XrP-DD-b4g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XfR-kj-yP9"/>
+                <constraint firstAttribute="trailing" secondItem="XrP-DD-b4g" secondAttribute="trailing" id="afd-nT-JCd"/>
+                <constraint firstItem="XrP-DD-b4g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iDR-3I-BMB"/>
+                <constraint firstAttribute="bottom" secondItem="XrP-DD-b4g" secondAttribute="bottom" id="sRr-Hl-qHv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="86.231884057971016" y="-116.51785714285714"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="8Yi-XR-zo4">
+            <size key="intrinsicContentSize" width="4" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="sdk_icon_info" width="16" height="16"/>
+    </resources>
+</document>

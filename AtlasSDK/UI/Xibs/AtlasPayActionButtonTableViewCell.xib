@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="142" id="VJM-lH-yFu" customClass="AtlasPayActionButtonTableViewCell" customModule="AtlasSDK">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VJM-lH-yFu" id="JCc-Dc-Y7n">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58p-Jo-jnr">
+                        <rect key="frame" x="25" y="15" width="391" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjw-hR-z6r" customClass="BorderedButton" customModule="AtlasSDK">
+                        <rect key="frame" x="25" y="15" width="391" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="wY4-7i-A2C"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="didTouchActionButton:" destination="VJM-lH-yFu" eventType="touchUpInside" id="kw1-MN-j9g"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Pjw-hR-z6r" secondAttribute="trailing" constant="25" id="4nl-q6-mLP"/>
+                    <constraint firstAttribute="trailing" secondItem="58p-Jo-jnr" secondAttribute="trailing" constant="25" id="9In-YH-50A"/>
+                    <constraint firstItem="Pjw-hR-z6r" firstAttribute="top" secondItem="JCc-Dc-Y7n" secondAttribute="top" constant="15" id="GMB-H4-8e4"/>
+                    <constraint firstAttribute="bottom" secondItem="Pjw-hR-z6r" secondAttribute="bottom" constant="1" id="LwG-lR-tFV"/>
+                    <constraint firstItem="58p-Jo-jnr" firstAttribute="leading" secondItem="JCc-Dc-Y7n" secondAttribute="leading" constant="25" id="b0x-ul-4mg"/>
+                    <constraint firstItem="58p-Jo-jnr" firstAttribute="top" secondItem="JCc-Dc-Y7n" secondAttribute="top" constant="15" id="daF-cl-8Lb"/>
+                    <constraint firstItem="Pjw-hR-z6r" firstAttribute="leading" secondItem="JCc-Dc-Y7n" secondAttribute="leading" constant="25" id="dbG-G3-3wG"/>
+                    <constraint firstAttribute="bottom" secondItem="58p-Jo-jnr" secondAttribute="bottom" constant="1" id="wNo-hM-CkJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnAction" destination="Pjw-hR-z6r" id="SC4-7g-oFs"/>
+                <outlet property="vShadow" destination="58p-Jo-jnr" id="Tke-Bm-iAz"/>
+            </connections>
+            <point key="canvasLocation" x="48.550724637681164" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+</document>

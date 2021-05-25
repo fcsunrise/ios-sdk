@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="E9j-E2-gpU" customClass="AtlasPayCardNumberTableViewCell" customModule="AtlasSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E9j-E2-gpU" id="dY2-DJ-HQV">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K94-8z-Epx" customClass="BorderedTextFieldView" customModule="AtlasSDK">
+                        <rect key="frame" x="25" y="15" width="364" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="9Is-NA-lBj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Номер карты"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="K94-8z-Epx" firstAttribute="top" secondItem="dY2-DJ-HQV" secondAttribute="top" constant="15" id="0NE-iZ-gIn"/>
+                    <constraint firstItem="K94-8z-Epx" firstAttribute="leading" secondItem="dY2-DJ-HQV" secondAttribute="leading" constant="25" id="NXY-Y5-N2I"/>
+                    <constraint firstAttribute="trailing" secondItem="K94-8z-Epx" secondAttribute="trailing" constant="25" id="dnO-rp-ZBM"/>
+                    <constraint firstAttribute="bottom" secondItem="K94-8z-Epx" secondAttribute="bottom" id="zn8-iD-bXF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="vInput" destination="K94-8z-Epx" id="lis-Jp-e2x"/>
+            </connections>
+            <point key="canvasLocation" x="-146" y="-52"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="242" id="ivl-vN-Mc7" customClass="AtlasPayGeneralSumTableViewCell" customModule="AtlasSDK">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="242"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ivl-vN-Mc7" id="N8w-nb-EgU">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="242"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfG-T4-E4M">
+                        <rect key="frame" x="25" y="12" width="379" height="227"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="36"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nq-u6-koD">
+                        <rect key="frame" x="25" y="241" width="379" height="1"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.63921568627450975" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="oy2-He-Ou6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6nq-u6-koD" secondAttribute="bottom" id="3zg-xU-3vK"/>
+                    <constraint firstItem="6nq-u6-koD" firstAttribute="leading" secondItem="N8w-nb-EgU" secondAttribute="leading" constant="25" id="4qN-V3-gUv"/>
+                    <constraint firstAttribute="trailing" secondItem="6nq-u6-koD" secondAttribute="trailing" constant="25" id="BON-DF-2CJ"/>
+                    <constraint firstItem="PfG-T4-E4M" firstAttribute="top" secondItem="N8w-nb-EgU" secondAttribute="top" constant="12" id="J4x-Au-3S0"/>
+                    <constraint firstItem="6nq-u6-koD" firstAttribute="top" secondItem="PfG-T4-E4M" secondAttribute="bottom" constant="2" id="LQr-Sh-p6s"/>
+                    <constraint firstAttribute="trailing" secondItem="PfG-T4-E4M" secondAttribute="trailing" constant="25" id="dXr-aD-cQu"/>
+                    <constraint firstItem="PfG-T4-E4M" firstAttribute="leading" secondItem="N8w-nb-EgU" secondAttribute="leading" constant="25" id="yeg-ui-xNn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblSum" destination="PfG-T4-E4M" id="NBr-wC-ZU4"/>
+            </connections>
+            <point key="canvasLocation" x="6.5217391304347831" y="109.15178571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

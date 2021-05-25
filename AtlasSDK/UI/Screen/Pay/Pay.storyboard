@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uG1-P5-dO8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4hi-A7-hnX">
+            <objects>
+                <navigationController id="uG1-P5-dO8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RY5-nF-RX1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TJw-NS-9X5" kind="relationship" relationship="rootViewController" id="UzJ-7u-9BC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adq-EV-KFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1252" y="108"/>
+        </scene>
+        <!--Pay View Controller-->
+        <scene sceneID="i3H-8n-c5C">
+            <objects>
+                <viewController storyboardIdentifier="PayViewController" id="TJw-NS-9X5" customClass="PayViewController" customModule="AtlasSDK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sTC-yJ-dfL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="UXS-lw-zxn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="TJw-NS-9X5" id="p9m-0d-SU4"/>
+                                    <outlet property="delegate" destination="TJw-NS-9X5" id="cGr-Xk-tAa"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="B3t-5m-T6c">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" red="0.99215686270000003" green="0.63921568630000003" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Uv-58-Z4y"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UXS-lw-zxn" firstAttribute="top" secondItem="9Uv-58-Z4y" secondAttribute="top" id="4oY-dI-Xwa"/>
+                            <constraint firstItem="UXS-lw-zxn" firstAttribute="leading" secondItem="sTC-yJ-dfL" secondAttribute="leading" id="8fP-P7-vIU"/>
+                            <constraint firstItem="B3t-5m-T6c" firstAttribute="centerX" secondItem="sTC-yJ-dfL" secondAttribute="centerX" id="I6y-JB-idd"/>
+                            <constraint firstAttribute="bottom" secondItem="UXS-lw-zxn" secondAttribute="bottom" id="NLB-rW-wzW"/>
+                            <constraint firstAttribute="trailing" secondItem="UXS-lw-zxn" secondAttribute="trailing" id="f02-sp-LI8"/>
+                            <constraint firstItem="B3t-5m-T6c" firstAttribute="centerY" secondItem="sTC-yJ-dfL" secondAttribute="centerY" id="sdD-HQ-hSD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0F3-t2-ZKl"/>
+                    <connections>
+                        <outlet property="tvPay" destination="UXS-lw-zxn" id="cOW-HM-jlQ"/>
+                        <outlet property="vActivityIndicator" destination="B3t-5m-T6c" id="71l-nY-q3f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GbL-d7-jCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337.68115942028987" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+</document>

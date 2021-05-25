@@ -1,0 +1,1201 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1D6FB5B265CF1D3008B8BFE /* AtlasSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D6FB59265CF1D3008B8BFE /* AtlasSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1D6FC10265CF562008B8BFE /* UIWindow+SafeAreaSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB6A265CF562008B8BFE /* UIWindow+SafeAreaSizes.swift */; };
+		F1D6FC11265CF562008B8BFE /* UIWindow+KeyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB6B265CF562008B8BFE /* UIWindow+KeyWindow.swift */; };
+		F1D6FC12265CF562008B8BFE /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB6D265CF562008B8BFE /* UIColor+Hex.swift */; };
+		F1D6FC13265CF562008B8BFE /* UIColor+SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB6E265CF562008B8BFE /* UIColor+SDK.swift */; };
+		F1D6FC14265CF562008B8BFE /* UIView+RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB70265CF562008B8BFE /* UIView+RoundCorners.swift */; };
+		F1D6FC15265CF562008B8BFE /* UIView+NibLoaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB71265CF562008B8BFE /* UIView+NibLoaded.swift */; };
+		F1D6FC16265CF562008B8BFE /* NSRange+Deleting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB73265CF562008B8BFE /* NSRange+Deleting.swift */; };
+		F1D6FC17265CF562008B8BFE /* UINavigationBar+Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB76265CF562008B8BFE /* UINavigationBar+Sizes.swift */; };
+		F1D6FC18265CF562008B8BFE /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB78265CF562008B8BFE /* UIViewController+NavigationBar.swift */; };
+		F1D6FC19265CF562008B8BFE /* UIViewController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB79265CF562008B8BFE /* UIViewController+StatusBar.swift */; };
+		F1D6FC1A265CF562008B8BFE /* UINavigationController+RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB7B265CF562008B8BFE /* UINavigationController+RootViewController.swift */; };
+		F1D6FC1B265CF562008B8BFE /* UINavigationController+AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB7C265CF562008B8BFE /* UINavigationController+AlertController.swift */; };
+		F1D6FC1C265CF562008B8BFE /* UITableView+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB7E265CF562008B8BFE /* UITableView+CellRegistration.swift */; };
+		F1D6FC1D265CF562008B8BFE /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB80265CF562008B8BFE /* NSObject+ClassName.swift */; };
+		F1D6FC1E265CF562008B8BFE /* Error+Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB82265CF562008B8BFE /* Error+Code.swift */; };
+		F1D6FC1F265CF562008B8BFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB84265CF562008B8BFE /* Constants.swift */; };
+		F1D6FC20265CF562008B8BFE /* Constants+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB85265CF562008B8BFE /* Constants+UI.swift */; };
+		F1D6FC21265CF562008B8BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FB86265CF562008B8BFE /* Assets.xcassets */; };
+		F1D6FC22265CF562008B8BFE /* JSONSerializeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB89265CF562008B8BFE /* JSONSerializeUtils.swift */; };
+		F1D6FC23265CF562008B8BFE /* CommisionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB8B265CF562008B8BFE /* CommisionHelper.swift */; };
+		F1D6FC24265CF562008B8BFE /* CryptoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB8C265CF562008B8BFE /* CryptoHelper.swift */; };
+		F1D6FC25265CF562008B8BFE /* IPAdressHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB8D265CF562008B8BFE /* IPAdressHelper.swift */; };
+		F1D6FC26265CF562008B8BFE /* ErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB8F265CF562008B8BFE /* ErrorProtocol.swift */; };
+		F1D6FC27265CF562008B8BFE /* AutoIndentifierCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB90265CF562008B8BFE /* AutoIndentifierCell.swift */; };
+		F1D6FC28265CF562008B8BFE /* CommonInitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB91265CF562008B8BFE /* CommonInitable.swift */; };
+		F1D6FC29265CF562008B8BFE /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB92265CF562008B8BFE /* StoryboardInstantiable.swift */; };
+		F1D6FC2A265CF562008B8BFE /* NetworkHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB95265CF562008B8BFE /* NetworkHandling.swift */; };
+		F1D6FC2B265CF562008B8BFE /* TransactionNetworkHandlerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB96265CF562008B8BFE /* TransactionNetworkHandlerComponent.swift */; };
+		F1D6FC2C265CF562008B8BFE /* BaseNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB97265CF562008B8BFE /* BaseNetworkHandler.swift */; };
+		F1D6FC2D265CF562008B8BFE /* APIResponseSerializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB98265CF562008B8BFE /* APIResponseSerializing.swift */; };
+		F1D6FC2E265CF562008B8BFE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB9A265CF562008B8BFE /* APIClient.swift */; };
+		F1D6FC2F265CF562008B8BFE /* APIClient+ServerTrust.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB9B265CF562008B8BFE /* APIClient+ServerTrust.swift */; };
+		F1D6FC30265CF562008B8BFE /* APIClient+SessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB9C265CF562008B8BFE /* APIClient+SessionConfiguration.swift */; };
+		F1D6FC31265CF562008B8BFE /* APIClient+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB9D265CF562008B8BFE /* APIClient+Transactions.swift */; };
+		F1D6FC32265CF562008B8BFE /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FB9E265CF562008B8BFE /* APIConstants.swift */; };
+		F1D6FC33265CF562008B8BFE /* FindTransactionRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBA1265CF562008B8BFE /* FindTransactionRequestData.swift */; };
+		F1D6FC34265CF562008B8BFE /* ValidationTransactionResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBA2265CF562008B8BFE /* ValidationTransactionResponseData.swift */; };
+		F1D6FC35265CF562008B8BFE /* CreateTransactionResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBA3265CF562008B8BFE /* CreateTransactionResponseData.swift */; };
+		F1D6FC36265CF562008B8BFE /* FindTransactionResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBA4265CF562008B8BFE /* FindTransactionResponseData.swift */; };
+		F1D6FC37265CF562008B8BFE /* CreateTransactionRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBA5265CF562008B8BFE /* CreateTransactionRequestData.swift */; };
+		F1D6FC38265CF562008B8BFE /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBA6265CF562008B8BFE /* Source.swift */; };
+		F1D6FC39265CF562008B8BFE /* AtlasCommision.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBA7265CF562008B8BFE /* AtlasCommision.swift */; };
+		F1D6FC3A265CF562008B8BFE /* HostToHostFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBA8265CF562008B8BFE /* HostToHostFields.swift */; };
+		F1D6FC3B265CF562008B8BFE /* Props.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBA9265CF562008B8BFE /* Props.swift */; };
+		F1D6FC3C265CF562008B8BFE /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBAA265CF562008B8BFE /* AuthData.swift */; };
+		F1D6FC3D265CF562008B8BFE /* References.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBAB265CF562008B8BFE /* References.swift */; };
+		F1D6FC3E265CF562008B8BFE /* Acquiring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBAC265CF562008B8BFE /* Acquiring.swift */; };
+		F1D6FC3F265CF562008B8BFE /* RechabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBAE265CF562008B8BFE /* RechabilityManager.swift */; };
+		F1D6FC40265CF562008B8BFE /* APIErrorValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBAF265CF562008B8BFE /* APIErrorValidator.swift */; };
+		F1D6FC41265CF562008B8BFE /* SerializerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBB0265CF562008B8BFE /* SerializerUtils.swift */; };
+		F1D6FC42265CF562008B8BFE /* APIResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBB2265CF562008B8BFE /* APIResponseValidator.swift */; };
+		F1D6FC43265CF562008B8BFE /* CreateTransactionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBB5265CF562008B8BFE /* CreateTransactionEndpoint.swift */; };
+		F1D6FC44265CF562008B8BFE /* ValidateTransactionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBB6265CF562008B8BFE /* ValidateTransactionEndpoint.swift */; };
+		F1D6FC45265CF562008B8BFE /* FindTransactionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBB7265CF562008B8BFE /* FindTransactionEndpoint.swift */; };
+		F1D6FC46265CF562008B8BFE /* BaseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBB8265CF562008B8BFE /* BaseEndpoint.swift */; };
+		F1D6FC47265CF562008B8BFE /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBB9265CF562008B8BFE /* APIEndpoint.swift */; };
+		F1D6FC48265CF562008B8BFE /* Alamofire+NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBBA265CF562008B8BFE /* Alamofire+NetworkClient.swift */; };
+		F1D6FC49265CF562008B8BFE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBBC265CF562008B8BFE /* APIError.swift */; };
+		F1D6FC4A265CF562008B8BFE /* APIErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBBD265CF562008B8BFE /* APIErrorDescription.swift */; };
+		F1D6FC4B265CF562008B8BFE /* TransactionUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBBF265CF562008B8BFE /* TransactionUsecase.swift */; };
+		F1D6FC4C265CF562008B8BFE /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBC2265CF562008B8BFE /* AuthManager.swift */; };
+		F1D6FC4D265CF562008B8BFE /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBC4265CF562008B8BFE /* Core.swift */; };
+		F1D6FC4E265CF562008B8BFE /* HostToHostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBC7265CF562008B8BFE /* HostToHostService.swift */; };
+		F1D6FC4F265CF562008B8BFE /* WebAcquiringPaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBC8265CF562008B8BFE /* WebAcquiringPaymentService.swift */; };
+		F1D6FC50265CF562008B8BFE /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBC9265CF562008B8BFE /* BaseService.swift */; };
+		F1D6FC51265CF562008B8BFE /* AtlasSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBCA265CF562008B8BFE /* AtlasSDK.swift */; };
+		F1D6FC52265CF562008B8BFE /* CardTokenizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBCB265CF562008B8BFE /* CardTokenizationService.swift */; };
+		F1D6FC53265CF562008B8BFE /* AtlasPayLogoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBCE265CF562008B8BFE /* AtlasPayLogoTableViewCell.xib */; };
+		F1D6FC54265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBCF265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.xib */; };
+		F1D6FC55265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBD0265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.xib */; };
+		F1D6FC56265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBD1265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.xib */; };
+		F1D6FC57265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBD2265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.xib */; };
+		F1D6FC58265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBD3265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.xib */; };
+		F1D6FC59265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBD4265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.xib */; };
+		F1D6FC5A265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBD5265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.xib */; };
+		F1D6FC5B265CF562008B8BFE /* BorderedTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBD6265CF562008B8BFE /* BorderedTextFieldView.xib */; };
+		F1D6FC5F265CF562008B8BFE /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBDD265CF562008B8BFE /* Web.storyboard */; };
+		F1D6FC60265CF562008B8BFE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBDE265CF562008B8BFE /* WebViewController.swift */; };
+		F1D6FC61265CF562008B8BFE /* AtlasPayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBE1265CF562008B8BFE /* AtlasPayViewModel.swift */; };
+		F1D6FC62265CF562008B8BFE /* Pay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBE2265CF562008B8BFE /* Pay.storyboard */; };
+		F1D6FC63265CF562008B8BFE /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBE3265CF562008B8BFE /* PayViewController.swift */; };
+		F1D6FC64265CF562008B8BFE /* PayViewController+CellsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBE5265CF562008B8BFE /* PayViewController+CellsDelegate.swift */; };
+		F1D6FC65265CF562008B8BFE /* PayViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBE6265CF562008B8BFE /* PayViewController+UITableView.swift */; };
+		F1D6FC66265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBE9265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.swift */; };
+		F1D6FC67265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBEB265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.swift */; };
+		F1D6FC68265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBED265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.swift */; };
+		F1D6FC69265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBEF265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.swift */; };
+		F1D6FC6A265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBF1265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.swift */; };
+		F1D6FC6B265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBF3265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.swift */; };
+		F1D6FC6C265CF562008B8BFE /* AtlasPayLogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBF5265CF562008B8BFE /* AtlasPayLogoTableViewCell.swift */; };
+		F1D6FC6D265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBF7265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.swift */; };
+		F1D6FC70265CF562008B8BFE /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D6FBFD265CF562008B8BFE /* Scanner.storyboard */; };
+		F1D6FC71265CF562008B8BFE /* AtlasCardScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FBFE265CF562008B8BFE /* AtlasCardScannerViewController.swift */; };
+		F1D6FC72265CF562008B8BFE /* BorderedTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC01265CF562008B8BFE /* BorderedTextFieldView.swift */; };
+		F1D6FC73265CF562008B8BFE /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC04265CF562008B8BFE /* BorderedButton.swift */; };
+		F1D6FC74265CF562008B8BFE /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC05265CF562008B8BFE /* RoundedButton.swift */; };
+		F1D6FC75265CF562008B8BFE /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC06265CF562008B8BFE /* BaseButton.swift */; };
+		F1D6FC76265CF562008B8BFE /* AtlasBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC08265CF562008B8BFE /* AtlasBaseViewController.swift */; };
+		F1D6FC77265CF562008B8BFE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC09265CF562008B8BFE /* RootViewController.swift */; };
+		F1D6FC78265CF562008B8BFE /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC0A265CF562008B8BFE /* BaseNavigationController.swift */; };
+		F1D6FC79265CF562008B8BFE /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC0C265CF562008B8BFE /* RoundedView.swift */; };
+		F1D6FC7A265CF562008B8BFE /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC0D265CF562008B8BFE /* PaddedTextField.swift */; };
+		F1D6FC7B265CF562008B8BFE /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC0E265CF562008B8BFE /* BorderedView.swift */; };
+		F1D6FC7C265CF562008B8BFE /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC0F265CF562008B8BFE /* BaseView.swift */; };
+		F1D6FC80265CF64F008B8BFE /* BundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6FC7F265CF64E008B8BFE /* BundleHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1D6FB56265CF1D3008B8BFE /* AtlasSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AtlasSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D6FB59265CF1D3008B8BFE /* AtlasSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtlasSDK.h; sourceTree = "<group>"; };
+		F1D6FB5A265CF1D3008B8BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1D6FB6A265CF562008B8BFE /* UIWindow+SafeAreaSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+SafeAreaSizes.swift"; sourceTree = "<group>"; };
+		F1D6FB6B265CF562008B8BFE /* UIWindow+KeyWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+KeyWindow.swift"; sourceTree = "<group>"; };
+		F1D6FB6D265CF562008B8BFE /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		F1D6FB6E265CF562008B8BFE /* UIColor+SDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SDK.swift"; sourceTree = "<group>"; };
+		F1D6FB70265CF562008B8BFE /* UIView+RoundCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorners.swift"; sourceTree = "<group>"; };
+		F1D6FB71265CF562008B8BFE /* UIView+NibLoaded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoaded.swift"; sourceTree = "<group>"; };
+		F1D6FB73265CF562008B8BFE /* NSRange+Deleting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRange+Deleting.swift"; sourceTree = "<group>"; };
+		F1D6FB76265CF562008B8BFE /* UINavigationBar+Sizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Sizes.swift"; sourceTree = "<group>"; };
+		F1D6FB78265CF562008B8BFE /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
+		F1D6FB79265CF562008B8BFE /* UIViewController+StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StatusBar.swift"; sourceTree = "<group>"; };
+		F1D6FB7B265CF562008B8BFE /* UINavigationController+RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+RootViewController.swift"; sourceTree = "<group>"; };
+		F1D6FB7C265CF562008B8BFE /* UINavigationController+AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+AlertController.swift"; sourceTree = "<group>"; };
+		F1D6FB7E265CF562008B8BFE /* UITableView+CellRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+CellRegistration.swift"; sourceTree = "<group>"; };
+		F1D6FB80265CF562008B8BFE /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		F1D6FB82265CF562008B8BFE /* Error+Code.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Code.swift"; sourceTree = "<group>"; };
+		F1D6FB84265CF562008B8BFE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1D6FB85265CF562008B8BFE /* Constants+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constants+UI.swift"; sourceTree = "<group>"; };
+		F1D6FB86265CF562008B8BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1D6FB89265CF562008B8BFE /* JSONSerializeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializeUtils.swift; sourceTree = "<group>"; };
+		F1D6FB8B265CF562008B8BFE /* CommisionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommisionHelper.swift; sourceTree = "<group>"; };
+		F1D6FB8C265CF562008B8BFE /* CryptoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoHelper.swift; sourceTree = "<group>"; };
+		F1D6FB8D265CF562008B8BFE /* IPAdressHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAdressHelper.swift; sourceTree = "<group>"; };
+		F1D6FB8F265CF562008B8BFE /* ErrorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorProtocol.swift; sourceTree = "<group>"; };
+		F1D6FB90265CF562008B8BFE /* AutoIndentifierCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoIndentifierCell.swift; sourceTree = "<group>"; };
+		F1D6FB91265CF562008B8BFE /* CommonInitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonInitable.swift; sourceTree = "<group>"; };
+		F1D6FB92265CF562008B8BFE /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		F1D6FB95265CF562008B8BFE /* NetworkHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandling.swift; sourceTree = "<group>"; };
+		F1D6FB96265CF562008B8BFE /* TransactionNetworkHandlerComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionNetworkHandlerComponent.swift; sourceTree = "<group>"; };
+		F1D6FB97265CF562008B8BFE /* BaseNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkHandler.swift; sourceTree = "<group>"; };
+		F1D6FB98265CF562008B8BFE /* APIResponseSerializing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseSerializing.swift; sourceTree = "<group>"; };
+		F1D6FB9A265CF562008B8BFE /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F1D6FB9B265CF562008B8BFE /* APIClient+ServerTrust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+ServerTrust.swift"; sourceTree = "<group>"; };
+		F1D6FB9C265CF562008B8BFE /* APIClient+SessionConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+SessionConfiguration.swift"; sourceTree = "<group>"; };
+		F1D6FB9D265CF562008B8BFE /* APIClient+Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Transactions.swift"; sourceTree = "<group>"; };
+		F1D6FB9E265CF562008B8BFE /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		F1D6FBA1265CF562008B8BFE /* FindTransactionRequestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTransactionRequestData.swift; sourceTree = "<group>"; };
+		F1D6FBA2265CF562008B8BFE /* ValidationTransactionResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationTransactionResponseData.swift; sourceTree = "<group>"; };
+		F1D6FBA3265CF562008B8BFE /* CreateTransactionResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTransactionResponseData.swift; sourceTree = "<group>"; };
+		F1D6FBA4265CF562008B8BFE /* FindTransactionResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTransactionResponseData.swift; sourceTree = "<group>"; };
+		F1D6FBA5265CF562008B8BFE /* CreateTransactionRequestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTransactionRequestData.swift; sourceTree = "<group>"; };
+		F1D6FBA6265CF562008B8BFE /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		F1D6FBA7265CF562008B8BFE /* AtlasCommision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasCommision.swift; sourceTree = "<group>"; };
+		F1D6FBA8265CF562008B8BFE /* HostToHostFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostToHostFields.swift; sourceTree = "<group>"; };
+		F1D6FBA9265CF562008B8BFE /* Props.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Props.swift; sourceTree = "<group>"; };
+		F1D6FBAA265CF562008B8BFE /* AuthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
+		F1D6FBAB265CF562008B8BFE /* References.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = References.swift; sourceTree = "<group>"; };
+		F1D6FBAC265CF562008B8BFE /* Acquiring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Acquiring.swift; sourceTree = "<group>"; };
+		F1D6FBAE265CF562008B8BFE /* RechabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RechabilityManager.swift; sourceTree = "<group>"; };
+		F1D6FBAF265CF562008B8BFE /* APIErrorValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorValidator.swift; sourceTree = "<group>"; };
+		F1D6FBB0265CF562008B8BFE /* SerializerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializerUtils.swift; sourceTree = "<group>"; };
+		F1D6FBB2265CF562008B8BFE /* APIResponseValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseValidator.swift; sourceTree = "<group>"; };
+		F1D6FBB5265CF562008B8BFE /* CreateTransactionEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTransactionEndpoint.swift; sourceTree = "<group>"; };
+		F1D6FBB6265CF562008B8BFE /* ValidateTransactionEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateTransactionEndpoint.swift; sourceTree = "<group>"; };
+		F1D6FBB7265CF562008B8BFE /* FindTransactionEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTransactionEndpoint.swift; sourceTree = "<group>"; };
+		F1D6FBB8265CF562008B8BFE /* BaseEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEndpoint.swift; sourceTree = "<group>"; };
+		F1D6FBB9265CF562008B8BFE /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		F1D6FBBA265CF562008B8BFE /* Alamofire+NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+NetworkClient.swift"; sourceTree = "<group>"; };
+		F1D6FBBC265CF562008B8BFE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		F1D6FBBD265CF562008B8BFE /* APIErrorDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorDescription.swift; sourceTree = "<group>"; };
+		F1D6FBBF265CF562008B8BFE /* TransactionUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionUsecase.swift; sourceTree = "<group>"; };
+		F1D6FBC2265CF562008B8BFE /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		F1D6FBC4265CF562008B8BFE /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		F1D6FBC7265CF562008B8BFE /* HostToHostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostToHostService.swift; sourceTree = "<group>"; };
+		F1D6FBC8265CF562008B8BFE /* WebAcquiringPaymentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAcquiringPaymentService.swift; sourceTree = "<group>"; };
+		F1D6FBC9265CF562008B8BFE /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		F1D6FBCA265CF562008B8BFE /* AtlasSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasSDK.swift; sourceTree = "<group>"; };
+		F1D6FBCB265CF562008B8BFE /* CardTokenizationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTokenizationService.swift; sourceTree = "<group>"; };
+		F1D6FBCE265CF562008B8BFE /* AtlasPayLogoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtlasPayLogoTableViewCell.xib; sourceTree = "<group>"; };
+		F1D6FBCF265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtlasPayActionButtonTableViewCell.xib; sourceTree = "<group>"; };
+		F1D6FBD0265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtlasPayGeneralSumTableViewCell.xib; sourceTree = "<group>"; };
+		F1D6FBD1265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtlasPayCardDatesTableViewCell.xib; sourceTree = "<group>"; };
+		F1D6FBD2265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtlasPayCardNumberTableViewCell.xib; sourceTree = "<group>"; };
+		F1D6FBD3265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtlasPayGeneralTitleTableViewCell.xib; sourceTree = "<group>"; };
+		F1D6FBD4265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtlasPayCardCVVTableViewCell.xib; sourceTree = "<group>"; };
+		F1D6FBD5265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtlasPayCompaniesTableViewCell.xib; sourceTree = "<group>"; };
+		F1D6FBD6265CF562008B8BFE /* BorderedTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BorderedTextFieldView.xib; sourceTree = "<group>"; };
+		F1D6FBDD265CF562008B8BFE /* Web.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
+		F1D6FBDE265CF562008B8BFE /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F1D6FBE1265CF562008B8BFE /* AtlasPayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasPayViewModel.swift; sourceTree = "<group>"; };
+		F1D6FBE2265CF562008B8BFE /* Pay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pay.storyboard; sourceTree = "<group>"; };
+		F1D6FBE3265CF562008B8BFE /* PayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		F1D6FBE5265CF562008B8BFE /* PayViewController+CellsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PayViewController+CellsDelegate.swift"; sourceTree = "<group>"; };
+		F1D6FBE6265CF562008B8BFE /* PayViewController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PayViewController+UITableView.swift"; sourceTree = "<group>"; };
+		F1D6FBE9265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasPayCompaniesTableViewCell.swift; sourceTree = "<group>"; };
+		F1D6FBEB265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasPayCardDatesTableViewCell.swift; sourceTree = "<group>"; };
+		F1D6FBED265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasPayGeneralTitleTableViewCell.swift; sourceTree = "<group>"; };
+		F1D6FBEF265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasPayCardNumberTableViewCell.swift; sourceTree = "<group>"; };
+		F1D6FBF1265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasPayCardCVVTableViewCell.swift; sourceTree = "<group>"; };
+		F1D6FBF3265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasPayGeneralSumTableViewCell.swift; sourceTree = "<group>"; };
+		F1D6FBF5265CF562008B8BFE /* AtlasPayLogoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasPayLogoTableViewCell.swift; sourceTree = "<group>"; };
+		F1D6FBF7265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasPayActionButtonTableViewCell.swift; sourceTree = "<group>"; };
+		F1D6FBFD265CF562008B8BFE /* Scanner.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
+		F1D6FBFE265CF562008B8BFE /* AtlasCardScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasCardScannerViewController.swift; sourceTree = "<group>"; };
+		F1D6FC01265CF562008B8BFE /* BorderedTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedTextFieldView.swift; sourceTree = "<group>"; };
+		F1D6FC04265CF562008B8BFE /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		F1D6FC05265CF562008B8BFE /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		F1D6FC06265CF562008B8BFE /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		F1D6FC08265CF562008B8BFE /* AtlasBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasBaseViewController.swift; sourceTree = "<group>"; };
+		F1D6FC09265CF562008B8BFE /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F1D6FC0A265CF562008B8BFE /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		F1D6FC0C265CF562008B8BFE /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		F1D6FC0D265CF562008B8BFE /* PaddedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
+		F1D6FC0E265CF562008B8BFE /* BorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
+		F1D6FC0F265CF562008B8BFE /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F1D6FC7F265CF64E008B8BFE /* BundleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1D6FB53265CF1D3008B8BFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1D6FB4C265CF1D3008B8BFE = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB58265CF1D3008B8BFE /* AtlasSDK */,
+				F1D6FB57265CF1D3008B8BFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1D6FB57265CF1D3008B8BFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB56265CF1D3008B8BFE /* AtlasSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1D6FB58265CF1D3008B8BFE /* AtlasSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB86265CF562008B8BFE /* Assets.xcassets */,
+				F1D6FB83265CF562008B8BFE /* Constants */,
+				F1D6FBC0265CF562008B8BFE /* Core */,
+				F1D6FB68265CF562008B8BFE /* Extensions */,
+				F1D6FB87265CF562008B8BFE /* Libraries */,
+				F1D6FB93265CF562008B8BFE /* Networking */,
+				F1D6FB8E265CF562008B8BFE /* Protocols */,
+				F1D6FBC5265CF562008B8BFE /* Resources */,
+				F1D6FBC6265CF562008B8BFE /* SDK */,
+				F1D6FBCC265CF562008B8BFE /* UI */,
+				F1D6FB59265CF1D3008B8BFE /* AtlasSDK.h */,
+				F1D6FB5A265CF1D3008B8BFE /* Info.plist */,
+			);
+			path = AtlasSDK;
+			sourceTree = "<group>";
+		};
+		F1D6FB68265CF562008B8BFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB69265CF562008B8BFE /* UIWindow */,
+				F1D6FB6C265CF562008B8BFE /* UIColor */,
+				F1D6FB6F265CF562008B8BFE /* UIView */,
+				F1D6FB72265CF562008B8BFE /* NSRange */,
+				F1D6FB74265CF562008B8BFE /* UIFont */,
+				F1D6FB75265CF562008B8BFE /* UINavigationBar */,
+				F1D6FB77265CF562008B8BFE /* UIViewController */,
+				F1D6FB7A265CF562008B8BFE /* UINavigationController */,
+				F1D6FB7D265CF562008B8BFE /* UITableView */,
+				F1D6FB7F265CF562008B8BFE /* NSObject */,
+				F1D6FB81265CF562008B8BFE /* Error */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F1D6FB69265CF562008B8BFE /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB6A265CF562008B8BFE /* UIWindow+SafeAreaSizes.swift */,
+				F1D6FB6B265CF562008B8BFE /* UIWindow+KeyWindow.swift */,
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		F1D6FB6C265CF562008B8BFE /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB6D265CF562008B8BFE /* UIColor+Hex.swift */,
+				F1D6FB6E265CF562008B8BFE /* UIColor+SDK.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		F1D6FB6F265CF562008B8BFE /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB70265CF562008B8BFE /* UIView+RoundCorners.swift */,
+				F1D6FB71265CF562008B8BFE /* UIView+NibLoaded.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		F1D6FB72265CF562008B8BFE /* NSRange */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB73265CF562008B8BFE /* NSRange+Deleting.swift */,
+			);
+			path = NSRange;
+			sourceTree = "<group>";
+		};
+		F1D6FB74265CF562008B8BFE /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		F1D6FB75265CF562008B8BFE /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB76265CF562008B8BFE /* UINavigationBar+Sizes.swift */,
+			);
+			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
+		F1D6FB77265CF562008B8BFE /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB78265CF562008B8BFE /* UIViewController+NavigationBar.swift */,
+				F1D6FB79265CF562008B8BFE /* UIViewController+StatusBar.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		F1D6FB7A265CF562008B8BFE /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB7B265CF562008B8BFE /* UINavigationController+RootViewController.swift */,
+				F1D6FB7C265CF562008B8BFE /* UINavigationController+AlertController.swift */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		F1D6FB7D265CF562008B8BFE /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB7E265CF562008B8BFE /* UITableView+CellRegistration.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		F1D6FB7F265CF562008B8BFE /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB80265CF562008B8BFE /* NSObject+ClassName.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		F1D6FB81265CF562008B8BFE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB82265CF562008B8BFE /* Error+Code.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		F1D6FB83265CF562008B8BFE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB84265CF562008B8BFE /* Constants.swift */,
+				F1D6FB85265CF562008B8BFE /* Constants+UI.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F1D6FB87265CF562008B8BFE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB88265CF562008B8BFE /* Utils */,
+				F1D6FB8A265CF562008B8BFE /* Helpers */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		F1D6FB88265CF562008B8BFE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB89265CF562008B8BFE /* JSONSerializeUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F1D6FB8A265CF562008B8BFE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FC7F265CF64E008B8BFE /* BundleHelper.swift */,
+				F1D6FB8B265CF562008B8BFE /* CommisionHelper.swift */,
+				F1D6FB8C265CF562008B8BFE /* CryptoHelper.swift */,
+				F1D6FB8D265CF562008B8BFE /* IPAdressHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F1D6FB8E265CF562008B8BFE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB8F265CF562008B8BFE /* ErrorProtocol.swift */,
+				F1D6FB90265CF562008B8BFE /* AutoIndentifierCell.swift */,
+				F1D6FB91265CF562008B8BFE /* CommonInitable.swift */,
+				F1D6FB92265CF562008B8BFE /* StoryboardInstantiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F1D6FB93265CF562008B8BFE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB94265CF562008B8BFE /* NetworkHandlers */,
+				F1D6FB98265CF562008B8BFE /* APIResponseSerializing.swift */,
+				F1D6FB99265CF562008B8BFE /* APIClient */,
+				F1D6FB9E265CF562008B8BFE /* APIConstants.swift */,
+				F1D6FB9F265CF562008B8BFE /* Models */,
+				F1D6FBAD265CF562008B8BFE /* Utilities */,
+				F1D6FBB1265CF562008B8BFE /* Common */,
+				F1D6FBB2265CF562008B8BFE /* APIResponseValidator.swift */,
+				F1D6FBB3265CF562008B8BFE /* Endpoint */,
+				F1D6FBBA265CF562008B8BFE /* Alamofire+NetworkClient.swift */,
+				F1D6FBBB265CF562008B8BFE /* Error */,
+				F1D6FBBE265CF562008B8BFE /* Usecases */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F1D6FB94265CF562008B8BFE /* NetworkHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB95265CF562008B8BFE /* NetworkHandling.swift */,
+				F1D6FB96265CF562008B8BFE /* TransactionNetworkHandlerComponent.swift */,
+				F1D6FB97265CF562008B8BFE /* BaseNetworkHandler.swift */,
+			);
+			path = NetworkHandlers;
+			sourceTree = "<group>";
+		};
+		F1D6FB99265CF562008B8BFE /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FB9A265CF562008B8BFE /* APIClient.swift */,
+				F1D6FB9B265CF562008B8BFE /* APIClient+ServerTrust.swift */,
+				F1D6FB9C265CF562008B8BFE /* APIClient+SessionConfiguration.swift */,
+				F1D6FB9D265CF562008B8BFE /* APIClient+Transactions.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		F1D6FB9F265CF562008B8BFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBA0265CF562008B8BFE /* Transaction */,
+				F1D6FBA6265CF562008B8BFE /* Source.swift */,
+				F1D6FBA7265CF562008B8BFE /* AtlasCommision.swift */,
+				F1D6FBA8265CF562008B8BFE /* HostToHostFields.swift */,
+				F1D6FBA9265CF562008B8BFE /* Props.swift */,
+				F1D6FBAA265CF562008B8BFE /* AuthData.swift */,
+				F1D6FBAB265CF562008B8BFE /* References.swift */,
+				F1D6FBAC265CF562008B8BFE /* Acquiring.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1D6FBA0265CF562008B8BFE /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBA1265CF562008B8BFE /* FindTransactionRequestData.swift */,
+				F1D6FBA2265CF562008B8BFE /* ValidationTransactionResponseData.swift */,
+				F1D6FBA3265CF562008B8BFE /* CreateTransactionResponseData.swift */,
+				F1D6FBA4265CF562008B8BFE /* FindTransactionResponseData.swift */,
+				F1D6FBA5265CF562008B8BFE /* CreateTransactionRequestData.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		F1D6FBAD265CF562008B8BFE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBAE265CF562008B8BFE /* RechabilityManager.swift */,
+				F1D6FBAF265CF562008B8BFE /* APIErrorValidator.swift */,
+				F1D6FBB0265CF562008B8BFE /* SerializerUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F1D6FBB1265CF562008B8BFE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F1D6FBB3265CF562008B8BFE /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBB4265CF562008B8BFE /* Transaction */,
+				F1D6FBB8265CF562008B8BFE /* BaseEndpoint.swift */,
+				F1D6FBB9265CF562008B8BFE /* APIEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		F1D6FBB4265CF562008B8BFE /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBB5265CF562008B8BFE /* CreateTransactionEndpoint.swift */,
+				F1D6FBB6265CF562008B8BFE /* ValidateTransactionEndpoint.swift */,
+				F1D6FBB7265CF562008B8BFE /* FindTransactionEndpoint.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		F1D6FBBB265CF562008B8BFE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBBC265CF562008B8BFE /* APIError.swift */,
+				F1D6FBBD265CF562008B8BFE /* APIErrorDescription.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		F1D6FBBE265CF562008B8BFE /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBBF265CF562008B8BFE /* TransactionUsecase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		F1D6FBC0265CF562008B8BFE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBC1265CF562008B8BFE /* Managers */,
+				F1D6FBC3265CF562008B8BFE /* Presenters */,
+				F1D6FBC4265CF562008B8BFE /* Core.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F1D6FBC1265CF562008B8BFE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBC2265CF562008B8BFE /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F1D6FBC3265CF562008B8BFE /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		F1D6FBC5265CF562008B8BFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1D6FBC6265CF562008B8BFE /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBC7265CF562008B8BFE /* HostToHostService.swift */,
+				F1D6FBC8265CF562008B8BFE /* WebAcquiringPaymentService.swift */,
+				F1D6FBC9265CF562008B8BFE /* BaseService.swift */,
+				F1D6FBCA265CF562008B8BFE /* AtlasSDK.swift */,
+				F1D6FBCB265CF562008B8BFE /* CardTokenizationService.swift */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		F1D6FBCC265CF562008B8BFE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBCD265CF562008B8BFE /* Xibs */,
+				F1D6FBD7265CF562008B8BFE /* Screen */,
+				F1D6FBFF265CF562008B8BFE /* Views */,
+				F1D6FC02265CF562008B8BFE /* Base */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F1D6FBCD265CF562008B8BFE /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBCE265CF562008B8BFE /* AtlasPayLogoTableViewCell.xib */,
+				F1D6FBCF265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.xib */,
+				F1D6FBD0265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.xib */,
+				F1D6FBD1265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.xib */,
+				F1D6FBD2265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.xib */,
+				F1D6FBD3265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.xib */,
+				F1D6FBD4265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.xib */,
+				F1D6FBD5265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.xib */,
+				F1D6FBD6265CF562008B8BFE /* BorderedTextFieldView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		F1D6FBD7265CF562008B8BFE /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBDC265CF562008B8BFE /* Web */,
+				F1D6FBDF265CF562008B8BFE /* Pay */,
+				F1D6FBFC265CF562008B8BFE /* Scanner */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		F1D6FBDC265CF562008B8BFE /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBDD265CF562008B8BFE /* Web.storyboard */,
+				F1D6FBDE265CF562008B8BFE /* WebViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		F1D6FBDF265CF562008B8BFE /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBE0265CF562008B8BFE /* ViewModel */,
+				F1D6FBE2265CF562008B8BFE /* Pay.storyboard */,
+				F1D6FBE3265CF562008B8BFE /* PayViewController.swift */,
+				F1D6FBE4265CF562008B8BFE /* Extensions */,
+				F1D6FBE7265CF562008B8BFE /* Views */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		F1D6FBE0265CF562008B8BFE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBE1265CF562008B8BFE /* AtlasPayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1D6FBE4265CF562008B8BFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBE5265CF562008B8BFE /* PayViewController+CellsDelegate.swift */,
+				F1D6FBE6265CF562008B8BFE /* PayViewController+UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F1D6FBE7265CF562008B8BFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBE8265CF562008B8BFE /* AtlasPayCompaniesTableViewCell */,
+				F1D6FBEA265CF562008B8BFE /* AtlasPayCardDatesTableViewCell */,
+				F1D6FBEC265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell */,
+				F1D6FBEE265CF562008B8BFE /* AtlasPayCardNumberTableViewCell */,
+				F1D6FBF0265CF562008B8BFE /* AtlasPayCardCVVTableViewCell */,
+				F1D6FBF2265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell */,
+				F1D6FBF4265CF562008B8BFE /* AtlasPayLogoTableViewCell */,
+				F1D6FBF6265CF562008B8BFE /* AtlasPayActionButtonTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1D6FBE8265CF562008B8BFE /* AtlasPayCompaniesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBE9265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.swift */,
+			);
+			path = AtlasPayCompaniesTableViewCell;
+			sourceTree = "<group>";
+		};
+		F1D6FBEA265CF562008B8BFE /* AtlasPayCardDatesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBEB265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.swift */,
+			);
+			path = AtlasPayCardDatesTableViewCell;
+			sourceTree = "<group>";
+		};
+		F1D6FBEC265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBED265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.swift */,
+			);
+			path = AtlasPayGeneralTitleTableViewCell;
+			sourceTree = "<group>";
+		};
+		F1D6FBEE265CF562008B8BFE /* AtlasPayCardNumberTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBEF265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.swift */,
+			);
+			path = AtlasPayCardNumberTableViewCell;
+			sourceTree = "<group>";
+		};
+		F1D6FBF0265CF562008B8BFE /* AtlasPayCardCVVTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBF1265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.swift */,
+			);
+			path = AtlasPayCardCVVTableViewCell;
+			sourceTree = "<group>";
+		};
+		F1D6FBF2265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBF3265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.swift */,
+			);
+			path = AtlasPayGeneralSumTableViewCell;
+			sourceTree = "<group>";
+		};
+		F1D6FBF4265CF562008B8BFE /* AtlasPayLogoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBF5265CF562008B8BFE /* AtlasPayLogoTableViewCell.swift */,
+			);
+			path = AtlasPayLogoTableViewCell;
+			sourceTree = "<group>";
+		};
+		F1D6FBF6265CF562008B8BFE /* AtlasPayActionButtonTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBF7265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.swift */,
+			);
+			path = AtlasPayActionButtonTableViewCell;
+			sourceTree = "<group>";
+		};
+		F1D6FBFC265CF562008B8BFE /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FBFD265CF562008B8BFE /* Scanner.storyboard */,
+				F1D6FBFE265CF562008B8BFE /* AtlasCardScannerViewController.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		F1D6FBFF265CF562008B8BFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FC00265CF562008B8BFE /* BorderedTextFieldView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1D6FC00265CF562008B8BFE /* BorderedTextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FC01265CF562008B8BFE /* BorderedTextFieldView.swift */,
+			);
+			path = BorderedTextFieldView;
+			sourceTree = "<group>";
+		};
+		F1D6FC02265CF562008B8BFE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FC03265CF562008B8BFE /* Controls */,
+				F1D6FC07265CF562008B8BFE /* Controllers */,
+				F1D6FC0B265CF562008B8BFE /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F1D6FC03265CF562008B8BFE /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FC04265CF562008B8BFE /* BorderedButton.swift */,
+				F1D6FC05265CF562008B8BFE /* RoundedButton.swift */,
+				F1D6FC06265CF562008B8BFE /* BaseButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		F1D6FC07265CF562008B8BFE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FC08265CF562008B8BFE /* AtlasBaseViewController.swift */,
+				F1D6FC09265CF562008B8BFE /* RootViewController.swift */,
+				F1D6FC0A265CF562008B8BFE /* BaseNavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1D6FC0B265CF562008B8BFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1D6FC0C265CF562008B8BFE /* RoundedView.swift */,
+				F1D6FC0D265CF562008B8BFE /* PaddedTextField.swift */,
+				F1D6FC0E265CF562008B8BFE /* BorderedView.swift */,
+				F1D6FC0F265CF562008B8BFE /* BaseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F1D6FB51265CF1D3008B8BFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D6FB5B265CF1D3008B8BFE /* AtlasSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F1D6FB55265CF1D3008B8BFE /* AtlasSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D6FB5E265CF1D3008B8BFE /* Build configuration list for PBXNativeTarget "AtlasSDK" */;
+			buildPhases = (
+				F1D6FB51265CF1D3008B8BFE /* Headers */,
+				F1D6FB52265CF1D3008B8BFE /* Sources */,
+				F1D6FB53265CF1D3008B8BFE /* Frameworks */,
+				F1D6FB54265CF1D3008B8BFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtlasSDK;
+			productName = AtlasSDK;
+			productReference = F1D6FB56265CF1D3008B8BFE /* AtlasSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1D6FB4D265CF1D3008B8BFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F1D6FB55265CF1D3008B8BFE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F1D6FB50265CF1D3008B8BFE /* Build configuration list for PBXProject "AtlasSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1D6FB4C265CF1D3008B8BFE;
+			productRefGroup = F1D6FB57265CF1D3008B8BFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1D6FB55265CF1D3008B8BFE /* AtlasSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1D6FB54265CF1D3008B8BFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D6FC59265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.xib in Resources */,
+				F1D6FC21265CF562008B8BFE /* Assets.xcassets in Resources */,
+				F1D6FC5A265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.xib in Resources */,
+				F1D6FC57265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.xib in Resources */,
+				F1D6FC55265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.xib in Resources */,
+				F1D6FC62265CF562008B8BFE /* Pay.storyboard in Resources */,
+				F1D6FC5B265CF562008B8BFE /* BorderedTextFieldView.xib in Resources */,
+				F1D6FC70265CF562008B8BFE /* Scanner.storyboard in Resources */,
+				F1D6FC54265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.xib in Resources */,
+				F1D6FC58265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.xib in Resources */,
+				F1D6FC53265CF562008B8BFE /* AtlasPayLogoTableViewCell.xib in Resources */,
+				F1D6FC56265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.xib in Resources */,
+				F1D6FC5F265CF562008B8BFE /* Web.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1D6FB52265CF1D3008B8BFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D6FC22265CF562008B8BFE /* JSONSerializeUtils.swift in Sources */,
+				F1D6FC1C265CF562008B8BFE /* UITableView+CellRegistration.swift in Sources */,
+				F1D6FC32265CF562008B8BFE /* APIConstants.swift in Sources */,
+				F1D6FC37265CF562008B8BFE /* CreateTransactionRequestData.swift in Sources */,
+				F1D6FC2C265CF562008B8BFE /* BaseNetworkHandler.swift in Sources */,
+				F1D6FC39265CF562008B8BFE /* AtlasCommision.swift in Sources */,
+				F1D6FC63265CF562008B8BFE /* PayViewController.swift in Sources */,
+				F1D6FC4A265CF562008B8BFE /* APIErrorDescription.swift in Sources */,
+				F1D6FC64265CF562008B8BFE /* PayViewController+CellsDelegate.swift in Sources */,
+				F1D6FC1B265CF562008B8BFE /* UINavigationController+AlertController.swift in Sources */,
+				F1D6FC4F265CF562008B8BFE /* WebAcquiringPaymentService.swift in Sources */,
+				F1D6FC6C265CF562008B8BFE /* AtlasPayLogoTableViewCell.swift in Sources */,
+				F1D6FC2A265CF562008B8BFE /* NetworkHandling.swift in Sources */,
+				F1D6FC74265CF562008B8BFE /* RoundedButton.swift in Sources */,
+				F1D6FC52265CF562008B8BFE /* CardTokenizationService.swift in Sources */,
+				F1D6FC6B265CF562008B8BFE /* AtlasPayGeneralSumTableViewCell.swift in Sources */,
+				F1D6FC72265CF562008B8BFE /* BorderedTextFieldView.swift in Sources */,
+				F1D6FC75265CF562008B8BFE /* BaseButton.swift in Sources */,
+				F1D6FC71265CF562008B8BFE /* AtlasCardScannerViewController.swift in Sources */,
+				F1D6FC49265CF562008B8BFE /* APIError.swift in Sources */,
+				F1D6FC6A265CF562008B8BFE /* AtlasPayCardCVVTableViewCell.swift in Sources */,
+				F1D6FC6D265CF562008B8BFE /* AtlasPayActionButtonTableViewCell.swift in Sources */,
+				F1D6FC12265CF562008B8BFE /* UIColor+Hex.swift in Sources */,
+				F1D6FC38265CF562008B8BFE /* Source.swift in Sources */,
+				F1D6FC43265CF562008B8BFE /* CreateTransactionEndpoint.swift in Sources */,
+				F1D6FC1A265CF562008B8BFE /* UINavigationController+RootViewController.swift in Sources */,
+				F1D6FC48265CF562008B8BFE /* Alamofire+NetworkClient.swift in Sources */,
+				F1D6FC34265CF562008B8BFE /* ValidationTransactionResponseData.swift in Sources */,
+				F1D6FC4D265CF562008B8BFE /* Core.swift in Sources */,
+				F1D6FC4B265CF562008B8BFE /* TransactionUsecase.swift in Sources */,
+				F1D6FC65265CF562008B8BFE /* PayViewController+UITableView.swift in Sources */,
+				F1D6FC1E265CF562008B8BFE /* Error+Code.swift in Sources */,
+				F1D6FC10265CF562008B8BFE /* UIWindow+SafeAreaSizes.swift in Sources */,
+				F1D6FC35265CF562008B8BFE /* CreateTransactionResponseData.swift in Sources */,
+				F1D6FC33265CF562008B8BFE /* FindTransactionRequestData.swift in Sources */,
+				F1D6FC17265CF562008B8BFE /* UINavigationBar+Sizes.swift in Sources */,
+				F1D6FC1F265CF562008B8BFE /* Constants.swift in Sources */,
+				F1D6FC44265CF562008B8BFE /* ValidateTransactionEndpoint.swift in Sources */,
+				F1D6FC3D265CF562008B8BFE /* References.swift in Sources */,
+				F1D6FC13265CF562008B8BFE /* UIColor+SDK.swift in Sources */,
+				F1D6FC67265CF562008B8BFE /* AtlasPayCardDatesTableViewCell.swift in Sources */,
+				F1D6FC61265CF562008B8BFE /* AtlasPayViewModel.swift in Sources */,
+				F1D6FC3F265CF562008B8BFE /* RechabilityManager.swift in Sources */,
+				F1D6FC80265CF64F008B8BFE /* BundleHelper.swift in Sources */,
+				F1D6FC25265CF562008B8BFE /* IPAdressHelper.swift in Sources */,
+				F1D6FC73265CF562008B8BFE /* BorderedButton.swift in Sources */,
+				F1D6FC41265CF562008B8BFE /* SerializerUtils.swift in Sources */,
+				F1D6FC3E265CF562008B8BFE /* Acquiring.swift in Sources */,
+				F1D6FC45265CF562008B8BFE /* FindTransactionEndpoint.swift in Sources */,
+				F1D6FC4E265CF562008B8BFE /* HostToHostService.swift in Sources */,
+				F1D6FC77265CF562008B8BFE /* RootViewController.swift in Sources */,
+				F1D6FC60265CF562008B8BFE /* WebViewController.swift in Sources */,
+				F1D6FC18265CF562008B8BFE /* UIViewController+NavigationBar.swift in Sources */,
+				F1D6FC26265CF562008B8BFE /* ErrorProtocol.swift in Sources */,
+				F1D6FC30265CF562008B8BFE /* APIClient+SessionConfiguration.swift in Sources */,
+				F1D6FC3A265CF562008B8BFE /* HostToHostFields.swift in Sources */,
+				F1D6FC46265CF562008B8BFE /* BaseEndpoint.swift in Sources */,
+				F1D6FC36265CF562008B8BFE /* FindTransactionResponseData.swift in Sources */,
+				F1D6FC66265CF562008B8BFE /* AtlasPayCompaniesTableViewCell.swift in Sources */,
+				F1D6FC3C265CF562008B8BFE /* AuthData.swift in Sources */,
+				F1D6FC47265CF562008B8BFE /* APIEndpoint.swift in Sources */,
+				F1D6FC2B265CF562008B8BFE /* TransactionNetworkHandlerComponent.swift in Sources */,
+				F1D6FC23265CF562008B8BFE /* CommisionHelper.swift in Sources */,
+				F1D6FC42265CF562008B8BFE /* APIResponseValidator.swift in Sources */,
+				F1D6FC15265CF562008B8BFE /* UIView+NibLoaded.swift in Sources */,
+				F1D6FC68265CF562008B8BFE /* AtlasPayGeneralTitleTableViewCell.swift in Sources */,
+				F1D6FC78265CF562008B8BFE /* BaseNavigationController.swift in Sources */,
+				F1D6FC2D265CF562008B8BFE /* APIResponseSerializing.swift in Sources */,
+				F1D6FC27265CF562008B8BFE /* AutoIndentifierCell.swift in Sources */,
+				F1D6FC28265CF562008B8BFE /* CommonInitable.swift in Sources */,
+				F1D6FC79265CF562008B8BFE /* RoundedView.swift in Sources */,
+				F1D6FC7B265CF562008B8BFE /* BorderedView.swift in Sources */,
+				F1D6FC19265CF562008B8BFE /* UIViewController+StatusBar.swift in Sources */,
+				F1D6FC76265CF562008B8BFE /* AtlasBaseViewController.swift in Sources */,
+				F1D6FC3B265CF562008B8BFE /* Props.swift in Sources */,
+				F1D6FC24265CF562008B8BFE /* CryptoHelper.swift in Sources */,
+				F1D6FC4C265CF562008B8BFE /* AuthManager.swift in Sources */,
+				F1D6FC2E265CF562008B8BFE /* APIClient.swift in Sources */,
+				F1D6FC11265CF562008B8BFE /* UIWindow+KeyWindow.swift in Sources */,
+				F1D6FC14265CF562008B8BFE /* UIView+RoundCorners.swift in Sources */,
+				F1D6FC50265CF562008B8BFE /* BaseService.swift in Sources */,
+				F1D6FC16265CF562008B8BFE /* NSRange+Deleting.swift in Sources */,
+				F1D6FC29265CF562008B8BFE /* StoryboardInstantiable.swift in Sources */,
+				F1D6FC1D265CF562008B8BFE /* NSObject+ClassName.swift in Sources */,
+				F1D6FC40265CF562008B8BFE /* APIErrorValidator.swift in Sources */,
+				F1D6FC51265CF562008B8BFE /* AtlasSDK.swift in Sources */,
+				F1D6FC20265CF562008B8BFE /* Constants+UI.swift in Sources */,
+				F1D6FC2F265CF562008B8BFE /* APIClient+ServerTrust.swift in Sources */,
+				F1D6FC69265CF562008B8BFE /* AtlasPayCardNumberTableViewCell.swift in Sources */,
+				F1D6FC31265CF562008B8BFE /* APIClient+Transactions.swift in Sources */,
+				F1D6FC7A265CF562008B8BFE /* PaddedTextField.swift in Sources */,
+				F1D6FC7C265CF562008B8BFE /* BaseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F1D6FB5C265CF1D3008B8BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1D6FB5D265CF1D3008B8BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1D6FB5F265CF1D3008B8BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FGY9M8PF4D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AtlasSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchcard.AtlasSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1D6FB60265CF1D3008B8BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FGY9M8PF4D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AtlasSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchcard.AtlasSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1D6FB50265CF1D3008B8BFE /* Build configuration list for PBXProject "AtlasSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D6FB5C265CF1D3008B8BFE /* Debug */,
+				F1D6FB5D265CF1D3008B8BFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D6FB5E265CF1D3008B8BFE /* Build configuration list for PBXNativeTarget "AtlasSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D6FB5F265CF1D3008B8BFE /* Debug */,
+				F1D6FB60265CF1D3008B8BFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1D6FB4D265CF1D3008B8BFE /* Project object */;
+}

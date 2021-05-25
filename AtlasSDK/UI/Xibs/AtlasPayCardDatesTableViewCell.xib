@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="105" id="1OY-AU-37t" customClass="AtlasPayCardDatesTableViewCell" customModule="AtlasSDK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1OY-AU-37t" id="qbE-wL-JUZ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VEA-dB-Tu4">
+                        <rect key="frame" x="25" y="15" width="364" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-bB-fbA" customClass="BorderedTextFieldView" customModule="AtlasSDK">
+                                <rect key="frame" x="0.0" y="0.0" width="172" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Месяц"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woH-Tp-pTT" customClass="BorderedTextFieldView" customModule="AtlasSDK">
+                                <rect key="frame" x="192" y="0.0" width="172" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Год"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="6Dk-rt-fw6"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="VEA-dB-Tu4" firstAttribute="leading" secondItem="qbE-wL-JUZ" secondAttribute="leading" constant="25" id="4kE-ti-2hW"/>
+                    <constraint firstAttribute="trailing" secondItem="VEA-dB-Tu4" secondAttribute="trailing" constant="25" id="KU9-Id-XOu"/>
+                    <constraint firstAttribute="bottom" secondItem="VEA-dB-Tu4" secondAttribute="bottom" id="dcm-eK-wLT"/>
+                    <constraint firstItem="VEA-dB-Tu4" firstAttribute="top" secondItem="qbE-wL-JUZ" secondAttribute="top" constant="15" id="iNB-D4-xPg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="vInputMonth" destination="TF2-bB-fbA" id="bAf-yz-joH"/>
+                <outlet property="vInputYear" destination="woH-Tp-pTT" id="2wc-gb-r34"/>
+            </connections>
+            <point key="canvasLocation" x="-84.057971014492765" y="47.209821428571423"/>
+        </tableViewCell>
+    </objects>
+</document>
