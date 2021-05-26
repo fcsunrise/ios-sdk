@@ -67,7 +67,7 @@ class AtlasCardScannerViewController: AtlasBaseViewController {
     }
     
     private func prepareNavigationBar() {
-        self.setNavigationBar(isHidden: true)
+        self.setNavigationBar(isHidden: false)
     }
 
     //MARK: - Camera
