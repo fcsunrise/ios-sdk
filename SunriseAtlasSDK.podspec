@@ -1,11 +1,11 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name               = "AtlasSDK"
-  spec.version            = "0.0.1"
-  spec.summary            = "AtlasSDK is a framework which provides Atlas payment services implementation to be used in mobile apps"
+  spec.name               = "SunriseAtlasSDK"
+  spec.version            = "0.0.2"
+  spec.summary            = "SunriseAtlasSDK is a framework which provides Atlas payment services implementation to be used in mobile apps"
 
-  spec.description        = "AtlasSDK is a framework which provides Atlas payment services implementation to be used in mobile apps"
+  spec.description        = "SunriseAtlasSDK is a framework which provides Atlas payment services implementation to be used in mobile apps"
 
   spec.homepage           = "https://docs.cityhub.com.ua/introduction.html"
   spec.license            = { :type => "MIT", :file => "LICENSE" }

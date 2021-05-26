@@ -30,6 +30,9 @@ public protocol AtlasSDKDelegate: class {
     ///sdk did complete transaction
     func atlasSDKDidCompleteTransaction(paymentID: String, externalTransactionID: Int?, oltpID: Int?)
     
+    ///sdk did receive pay_url for service processing
+    func atlasSDKDidReceive(payUrl: URL, paymentID: String, for service: SDKServices)
+    
 }
 
 extension AtlasSDKDelegate {
@@ -37,6 +40,8 @@ extension AtlasSDKDelegate {
     func atlasSDKDidReceive3DsOnHost2Host(paymentID: String, link: URL) {}
     
     func atlasSDKDidReceive3DsOnMoto(paymentID: String, link: URL) {}
+    
+    func atlasSDKDidReceive(payUrl: URL, paymentID: String, for service: SDKServices) {}
     
 }
 
@@ -235,6 +240,7 @@ public class AtlasSDK: NSObject, NetworkStateProtocol, TransactionUsecase {
         self.pointToken = pointToken
         self.paymentControllerNavigation.modalPresentationStyle = style
         self.paymentControllerNavigation.presentationController?.delegate = self
+        self.shouldShowWebControllerOnHost2HostPayment = true
         let controller = self.paymentControllerNavigation.rootViewController as! PayViewController
         controller.account = account
         controller.serviceID = serviceID
@@ -268,6 +274,7 @@ public class AtlasSDK: NSObject, NetworkStateProtocol, TransactionUsecase {
             if self?.shouldShowWebControllerOnCardTokenization == true {
                 self?.proceedRedirect(url: payURL, paymentID: paymentID, service: .tokenization)
             }
+            self?.delegate?.atlasSDKDidReceive(payUrl: payURL, paymentID: paymentID, for: .tokenization)
         }
         service.createTransactionCallback = { [weak self] (response) in
             self?.delegate?.atlasSDKDidCreateTransaction(with: response)
@@ -281,9 +288,11 @@ public class AtlasSDK: NSObject, NetworkStateProtocol, TransactionUsecase {
             if self?.shouldShowWebControllerOnWebAcquiringPayment == true {
                 self?.proceedRedirect(url: payURL, paymentID: paymentID, service: .webAcquiringPayment)
             }
+            self?.delegate?.atlasSDKDidReceive(payUrl: payURL, paymentID: paymentID, for: .webAcquiringPayment)
         }
         service.findTransactionCallback = { [weak self] (paymentID, externalTransactionID, oltpID) in
             self?.findTransactionBy(paymentID: paymentID, externalTransactionID: externalTransactionID, oltpID: oltpID)
+            self?.delegate?.atlasSDKDidCompleteTransaction(paymentID: paymentID, externalTransactionID: externalTransactionID, oltpID: oltpID)
         }
         service.threeDsCallBack = { [weak self] (link, paymentID) in
             if self?.shouldShowWebControllerOnWebAcquiringPayment == true {
@@ -305,6 +314,7 @@ public class AtlasSDK: NSObject, NetworkStateProtocol, TransactionUsecase {
         service.findTransactionCallback = { [weak self] (paymentID, externalTransactionID, oltpID) in
             self?.dismissPaymentNavigationIfNeeded {
                 self?.findTransactionBy(paymentID: paymentID, externalTransactionID: externalTransactionID, oltpID: oltpID)
+                self?.delegate?.atlasSDKDidCompleteTransaction(paymentID: paymentID, externalTransactionID: externalTransactionID, oltpID: oltpID)
             }
         }
         service.threeDsCallBack = { [weak self] (link, paymentID) in
