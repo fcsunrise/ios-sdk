@@ -21,9 +21,9 @@ extension References: JSONMarshaling {
     
     func jsonObject() -> JSONObject {
         return [
-            APIParameterName.callbackUrl.rawValue : self.callbackURL?.description.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "",
-            APIParameterName.failUrl.rawValue : self.failURL?.description.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "",
-            APIParameterName.successUrl.rawValue : self.successURL?.description.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
+            APIParameterName.callbackUrl.rawValue : self.callbackURL?.description,
+            APIParameterName.failUrl.rawValue : self.failURL?.description,
+            APIParameterName.successUrl.rawValue : self.successURL?.description
         ]
     }
     

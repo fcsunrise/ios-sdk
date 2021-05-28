@@ -26,7 +26,7 @@ class AuthManager: NSObject {
             return nil
         }
         let jsonString = dictionaryJSON.replacingOccurrences(of: " ", with: "") + pointToken
-        let encripted = CryptoHelper.shared.md5(string: jsonString)
+        let encripted = CryptoHelper.shared.md5(string: jsonString.replacingOccurrences(of: "\\", with: ""))
         return encripted
     }
     
